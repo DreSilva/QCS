@@ -1,0 +1,9 @@
+6&&&Mariana Loreto,Jorge Henriques,Andre Silva&&&AC&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Mariana Loreto,Andre Silva,Jorge Henriques&&&AC&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Andre Silva,Jorge Henriques,Mariana Loreto&&&AC&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Mariana Loreto,Jorge Henriques,Andre Silva&&&IS&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Mariana Loreto,Jorge Henriques,Andre Silva&&&ECOS&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Mariana Loreto,Jorge Henriques,Nuno Antunes&&&SSE&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Mariana Loreto,Nuno Antunes,Andre Silva&&&SSE&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Nuno Antunes,Jorge Henriques,Andre Silva&&&SSE&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21
+6&&&Mariana Loreto,Nuno Antunes,Andre Silva&&&QCS&&&teste1&&&2011&&&1997&&&cenas&&&IEEE&&&457716676&&&2011 cenas 2&&&21

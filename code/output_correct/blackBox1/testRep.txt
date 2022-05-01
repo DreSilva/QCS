@@ -1,0 +1,12 @@
+	AC - 	Membros efetivos: 0
+		Estudantes: 1
+	CMS - 	Membros efetivos: 0
+		Estudantes: 0
+	ECOS - 	Membros efetivos: 0
+		Estudantes: 0
+	IS - 	Membros efetivos: 0
+		Estudantes: 0
+	LCT - 	Membros efetivos: 0
+		Estudantes: 0
+	SSE - 	Membros efetivos: 0
+		Estudantes: 0

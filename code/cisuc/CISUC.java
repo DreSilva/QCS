@@ -25,7 +25,7 @@ public class CISUC {
         publicacao = new ArrayList<>();
         grupo = new ArrayList<>();
 
-        blackBoxTest(0);
+        blackBoxTest(1);
 
         /*
         if (lerObj() == 0) {
@@ -95,6 +95,11 @@ public class CISUC {
 
                         System.out.println(fileName);
 
+                        if(fileName.equals("testl.txt")){
+                            continue;
+                        }
+
+
                         //PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
                         //System.setOut(fileOut);
 
@@ -134,7 +139,7 @@ public class CISUC {
                         PrintStream fileOut = new PrintStream("output_data/blackBox1/" + fileName);
                         System.setOut(fileOut);
 
-                        //
+                        test1();
 
                         fileOut.close();
 
@@ -150,6 +155,7 @@ public class CISUC {
 
     /**
      * DEBUG - FUNCAO TESTE 0
+     * Verifica se pelo menos um dos autores existe
      */
     public void test0(BufferedReader br3) throws Exception{
 
@@ -183,7 +189,7 @@ public class CISUC {
 
     /**
      * DEBUG - FUNCAO TESTE 1
-     * //b) Number of members of each category
+     * //b) Number of members of each category (gryp)
      */
     public void test1(){
 
