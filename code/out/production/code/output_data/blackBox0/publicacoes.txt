@@ -1,0 +1,85 @@
+
+a) Total de membros:
+	AC: 9 membros
+	CMS: 9 membros
+	ECOS: 9 membros
+	IS: 9 membros
+	LCT: 9 membros
+	SSE: 9 membros
+b) Numero de membros de cada categoria:
+	AC - 	Membros efetivos: 5
+		Estudantes: 3
+	CMS - 	Membros efetivos: 5
+		Estudantes: 3
+	ECOS - 	Membros efetivos: 5
+		Estudantes: 3
+	IS - 	Membros efetivos: 5
+		Estudantes: 3
+	LCT - 	Membros efetivos: 5
+		Estudantes: 3
+	SSE - 	Membros efetivos: 5
+		Estudantes: 3
+c) Total de publicacoes dos ultimos 5 anos:
+	AC: 4 publicacoes
+	CMS: 2 publicacoes
+	ECOS: 1 publicacoes
+	IS: 4 publicacoes
+	LCT: 4 publicacoes
+	SSE: 3 publicacoes
+d) Numero de publicacoes, dos ultimos 5 anos, agrupadas por ano, tipo de publicacao e fator de impacto:
+* * * * * * * * * * * * * * Grupo AC * * * * * * * * * * * * * *
+* Ano 2020 *
+  -> Livro
+	Impacto B: 1 publicacao
+* Ano 2019 *
+  -> Livro Artigos Conferencia
+	Impacto A: 2 publicacoes
+* Ano 2015 *
+  -> Revista
+	Impacto B: 1 publicacao
+* * * * * * * * * * * * * * Grupo CMS * * * * * * * * * * * * * *
+* Ano 2017 *
+  -> Capitulo Livro
+	Impacto A: 1 publicacao
+* Ano 2016 *
+  -> Conferencia
+	Impacto C: 1 publicacao
+* * * * * * * * * * * * * * Grupo ECOS * * * * * * * * * * * * * *
+* Ano 2018 *
+  -> Conferencia
+	Impacto A: 1 publicacao
+* * * * * * * * * * * * * * Grupo IS * * * * * * * * * * * * * *
+* Ano 2020 *
+  -> Conferencia
+	Impacto A: 1 publicacao
+* Ano 2019 *
+  -> Capitulo Livro
+	Impacto A: 1 publicacao
+* Ano 2017 *
+  -> Revista
+	Impacto A: 1 publicacao
+* Ano 2016 *
+  -> Livro
+	Impacto A: 1 publicacao
+* * * * * * * * * * * * * * Grupo LCT * * * * * * * * * * * * * *
+* Ano 2020 *
+  -> Capitulo Livro
+	Impacto B: 1 publicacao
+  -> Livro Artigos Conferencia
+	Impacto C: 1 publicacao
+* Ano 2018 *
+  -> Livro
+	Impacto C: 1 publicacao
+* Ano 2015 *
+  -> Livro
+	Impacto B: 1 publicacao
+* * * * * * * * * * * * * * Grupo SSE * * * * * * * * * * * * * *
+* Ano 2020 *
+  -> Revista
+	Impacto C: 1 publicacao
+  -> Capitulo Livro
+	Impacto B: 1 publicacao
+* Ano 2018 *
+  -> Revista
+	Impacto A: 1 publicacao
+

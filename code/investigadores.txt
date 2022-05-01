@@ -1,0 +1,54 @@
+M#Jorge Henriques#jh@dei.uc.pt#AC#D2.7#110010
+M#Antonio Dourado#dourado@dei.uc.pt#AC#D3.5#110011
+M#Bernardete Ribeiro#bribeiro@dei.uc.pt#AC#D1.18#110012
+M#Joel Arrais#joelarrais@gmail.com#AC#G5.5#110013
+M#Luis Paquete#paquete@dei.uc.pt#AC#D2.18#110014
+M#Paulo Carvalho#carvalho@dei.uc.pt#AC#D2.8#110015
+E#Joaquim Leitao#jpleitao@dei.uc.pt#AC#Adaptive Supervisory Framework for Cyber-Physical Systems#30/10/2018#Bernardete Ribeiro
+E#Mauro Pinto#mauropinto@dei.uc.pt#AC#Evaluation and prediction of Multiple Sclerosis Disease Progression#13/8/2018#Luis Paquete
+E#Nelson Monteiro#nelsonnrcm@dei.uc.pt#AC#Drug-Target Interaction Prediction: End-to-End Deep Learning Approach#28/11/2019#Joel Arrais
+M#Penousal Machado#machado@dei.uc.pt#CMS#D2.21#110016
+M#Ana Boavida#aboavida@dei.uc.pt#CMS#D2.23#110017
+M#Luis Macedo#macedo@dei.uc.pt#CMS#D2.2#110018
+M#Maria Marcelino#zemar@dei.uc.pt#CMS#D2.3#110019
+M#Pedro Abreu#pha@dei.uc.pt#CMS#D2.13#110020
+M#Rui Paiva#ruipedro@dei.uc.pt#CMS#D2.11#110021
+E#Bruno Taborda#bmtt@dei.uc.pt#CMS#Wood Mass-Customized Housing: A dual computer implementation design strategy#2/3/2016#Luis Macedo
+E#Miriam Santos#miriams@dei.uc.pt#CMS#Influence of Data Distribution in Missing Data Imputation, in Artificial Intelligence in Medicine in Europe#25/9/2017#Pedro Abreu
+E#Tiago Martins#tiagofm@dei.uc.pt#CMS#Abordagens Algoritmicas e Computacionais na Arte e no Design#18/6/2013#Ana Boavida
+M#Nuno Lourenco#naml@dei.uc.pt#ECOS#D1.13#110022
+M#Ernesto Costa#ernesto@dei.uc.pt#ECOS#D3.6#110023
+M#Francisco Pereira#xico@dei.uc.pt#ECOS#D1.20#110024
+M#Joao Correia#jncor@dei.uc.pt#ECOS#D3.12#110025
+M#Leonor Melo#leonor@dei.uc.pt#ECOS#D2.1#110026
+M#Tiago Baptista#baptista@dei.uc.pt#ECOS#D2.24#110027
+E#Paulo Fernandes#pcastillo@student.dei.uc.pt#ECOS#Evolutionary Latent Space Exploration of Generative Adversarial Networks#16/4/2020#Joao Correia
+E#Pedro Carvalho#pfcarvalho@student.dei.uc.pt#ECOS#AutoLR: an evolutionary approach to learning rate policies#26/2/2020#Ernesto Costa
+E#Victor Costa#vfc@dei.uc.pt#ECOS#Coevolution of Generative Adversarial Networks#6/12/2019#Nuno Lourenco
+M#Licinio Roque#lir@dei.uc.pt#IS#D3.10#110028
+M#Joao Barata#barata@dei.uc.pt#IS#D2.17#110029
+M#Jorge Cardoso#jorgecardoso@dei.uc.pt#IS#D3.15#110030
+M#Paula Silva#paulasilva@dei.uc.pt#IS#D2.12#110031
+M#Paulo Cunha#rupino@dei.uc.pt#IS#D2.19#110032
+M#Rui Craveirinha#rui.craveirinha@gmail.com#IS#G6.7#110033
+E#Luis Pereira#lpereira@dei.uc.pt#IS#Actas da “Videojogos2013” Conferência de Ciências e Artes dos Videojogos#9/5/2014#Rui Craveirinha
+E#Nuno Castelhano#nscc@dei.uc.pt#IS#The integration of the Computer-mediated Ludic Experience in Multisensory Environments#25/11/2009#Licinio Roque
+E#Stanley Lima#stanleylima@dei.uc.pt#IS#A View of OpenStack: Toward an Open-Source Solution for Cloud#5/7/2017#Paula Silva
+M#Paulo Simoes#psimoes@dei.uc.pt#LCT#D3.16#110034
+M#Bruno Sousa#bmsousa@dei.uc.pt#LCT#D3.13#110038
+M#Edmundo Monteiro#edmundo@dei.uc.pt#LCT#D3.21#110035
+M#Joao Vilela#jpvilela@dei.uc.pt#LCT#D3.9#110039
+M#Marilia Curado#marilia@dei.uc.pt#LCT#D3.20#110036
+M#Tiago Cruz#tjcruz@dei.uc.pt#LCT#D3.19#110037
+E#David Abreu#dabreu@dei.uc.pt#LCT#Towards Latency Mitigation in Emergency Scenarios#21/4/2015#Marilia Curado
+E#Duarte Raposo#draposo@dei.uc.pt#LCT#Computational concept modeling for student centric lifestyle analysis: A technical report on socialite case study#23/6/2017#Tiago Cruz
+E#Mariana Cunha#mccunha@dei.uc.pt#LCT#Privacy-Preserving Mechanisms for Location Traces#1/12/2019#Joao Vilela
+M#Henrique Madeira#henrique@dei.uc.pt#SSE#D3.2#110040
+M#Bruno Cabral#bcabral@dei.uc.pt#SSE#D1.9#110041
+M#Fernando Barros#barros@dei.uc.pt#SSE#D1.19#110042
+M#Marco Vieira#mvieira@dei.uc.pt#SSE#D1.7#110043
+M#Nuno Antunes#nmsa@dei.uc.pt#SSE#D2.5#110044
+M#Raul Barbosa#rbarbosa@dei.uc.pt#SSE#D3.11#110045
+E#Charles Goncalves#charles@dei.uc.pt#SSE#Benchmarking the Security of Virtualization Infrastructures: Motivation and Approach#20/8/2017#Nuno Antunes
+E#Jaime Correia#jaimec@dei.uc.pt#SSE#A Data Science Service for Non-Programmers#15/7/2018#Marco Vieira
+E#Paulo Goncalves#pgoncalves@student.dei.uc.pt#SSE#Monitoring and Measuring the Trustworthiness of Critical Cloud Systems#26/3/2019#Bruno Cabral

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CISUC1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CISUC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
