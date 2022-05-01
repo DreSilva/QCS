@@ -1,0 +1,74 @@
+Fluxo 0
+
+while ((line3 = br3.readLine()) != null) {
+	numLine += 1;
+	
+	int aux = 0;
+
+	for (Grupos j : grupo) {
+		if (j.getAcronimo().equals(nomeGrupo)) {
+			if (j.getInvResp().equals(autores[0]) || j.getInvResp().equals(autores[1]) || j.getInvResp().equals(autores[2])) {
+				aux = 1;
+			}
+			String[] membros = j.getListaMembros();
+			for (String nome : membros) {
+				if (nome.equals(autores[0]) || nome.equals(autores[1]) || nome.equals(autores[2])) {
+					aux = 1;
+				}
+			}
+		}
+	}
+	
+	/...
+}
+
+------
+
+Caminhos fluxo 0:
+
+P1: S-1-E
+P2: S-1-2-3-1-E
+P3: S-1-2-3-4-3-1-E
+P4: S-1-2-3-4-5-6-7-8-3-1-E
+P5: S-1-2-3-4-5-7-8-3-1-E
+P6: S-1-2-3-4-5-6-7-8-9-10-11-8-3-1-E
+P7: S-1-2-3-4-5-7-8-9-10-11-8-3-1-E
+
+------
+
+Fluxo 1
+
+inicio;
+for (Grupos g2 : grupo) {
+	for (String membro : listaMembros) {
+	  for (Investigadores i : investigador) {
+		  if (membro.equals(i.getNome())) {
+			  if (i.isInv().equals("M")) {             
+				numM += 1;
+			  }
+			  else{
+				numE += 1;
+			  }
+		  }
+	  }
+	}
+}
+fim;
+
+------
+
+Caminhos fluxo 1:
+P1: S-1-E
+P2: S-1-2-1-E
+P3: S-1-2-3-2-1-E
+P4: S-1-2-3-4-3-2-1-E
+P5: S-1-2-3-4-5-6-3-2-1-E
+P6: S-1-2-3-4-5-7-3-2-1-E
+
+
+
+
+
+
+
+
