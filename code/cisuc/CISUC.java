@@ -93,8 +93,10 @@ public class CISUC {
                     if (fileEntry.isFile()){
                         fileName =  fileEntry.getName();
 
-                        PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
-                        System.setOut(fileOut);
+                        System.out.println(fileName);
+
+                        //PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
+                        //System.setOut(fileOut);
 
                         try {
 
@@ -111,7 +113,7 @@ public class CISUC {
                             System.err.println(e);
                         }
 
-                        fileOut.close();
+                        //fileOut.close();
                     }
                 }
             }
@@ -147,7 +149,7 @@ public class CISUC {
     }
 
     /**
-     * DEBUG - FUNCAO TESTE 1
+     * DEBUG - FUNCAO TESTE 0
      */
     public void test0(BufferedReader br3) throws Exception{
 
@@ -161,7 +163,7 @@ public class CISUC {
             String[] autores = cortado3[1].split(",");
             String nomeGrupo = cortado3[2];
             int aux = 0;
-            //Checks if at least 1 author is in the group of the publication
+
             for (Grupos j : grupo) {
                 if (j.getAcronimo().equals(nomeGrupo)) {
                     if (j.getInvResp().equals(autores[0]) || j.getInvResp().equals(autores[1]) || j.getInvResp().equals(autores[2])) {
@@ -181,10 +183,10 @@ public class CISUC {
 
     /**
      * DEBUG - FUNCAO TESTE 1
+     * //b) Number of members of each category
      */
     public void test1(){
-        //b) Number of members of each category
-        System.out.println("b) Numero de membros de cada categoria:");
+
         for (Grupos g2 : grupo) {
             int numM = 0, numE = 0;
             String[] listaMembros = g2.getListaMembros();
