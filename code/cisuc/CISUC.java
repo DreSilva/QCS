@@ -78,7 +78,6 @@ public class CISUC {
 
         File folder;
         File[] listOfFiles;
-        PrintStream fileOut;
         String fileName;
 
         lerTxt1();
@@ -94,11 +93,25 @@ public class CISUC {
                     if (fileEntry.isFile()){
                         fileName =  fileEntry.getName();
 
-                        fileOut = new PrintStream("output_data/blackBox0/" + fileName);
+                        PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
                         System.setOut(fileOut);
 
-                        lerTxt3("input_data/blackBox0/" + fileName);
-                        listarTGrupos();
+                        try {
+
+                            FileReader fr3 = new FileReader(fileEntry);
+                            BufferedReader br3 = new BufferedReader(fr3);
+
+                            test0(br3);
+
+                        } catch (FileNotFoundException ex) {
+                            System.err.println("Erro ao abrir o ficheiro de texto.");
+                        } catch (IOException ex) {
+                            System.err.println("Erro a ler o ficheiro de texto.");
+                        } catch (Exception e) {
+                            System.err.println(e);
+                        }
+
+                        fileOut.close();
                     }
                 }
             }
@@ -116,10 +129,13 @@ public class CISUC {
                     if (fileEntry.isFile()){
                         fileName =  fileEntry.getName();
 
-                        fileOut = new PrintStream("output_data/blackBox1/" + fileName);
+                        PrintStream fileOut = new PrintStream("output_data/blackBox1/" + fileName);
                         System.setOut(fileOut);
 
-                        listarTGruposB();
+                        //
+
+                        fileOut.close();
+
                     }
                 }
             }
@@ -133,7 +149,40 @@ public class CISUC {
     /**
      * DEBUG - FUNCAO TESTE 1
      */
-    public void listarTGruposB(){
+    public void test0(BufferedReader br3) throws Exception{
+
+        String line3;
+        int numLine = 0;
+
+        while ((line3 = br3.readLine()) != null) {
+            numLine += 1;
+
+            String[] cortado3 = line3.split("&&&");
+            String[] autores = cortado3[1].split(",");
+            String nomeGrupo = cortado3[2];
+            int aux = 0;
+            //Checks if at least 1 author is in the group of the publication
+            for (Grupos j : grupo) {
+                if (j.getAcronimo().equals(nomeGrupo)) {
+                    if (j.getInvResp().equals(autores[0]) || j.getInvResp().equals(autores[1]) || j.getInvResp().equals(autores[2])) {
+                        aux = 1;
+                    }
+                    String[] membros = j.getListaMembros();
+                    for (String nome : membros) {
+                        if (nome.equals(autores[0]) || nome.equals(autores[1]) || nome.equals(autores[2])) {
+                            aux = 1;
+                        }
+                    }
+                }
+            }
+            System.out.println(aux);
+        }
+    }
+
+    /**
+     * DEBUG - FUNCAO TESTE 1
+     */
+    public void test1(){
         //b) Number of members of each category
         System.out.println("b) Numero de membros de cada categoria:");
         for (Grupos g2 : grupo) {
@@ -243,19 +292,16 @@ public class CISUC {
     /**
      * Read the text file 'publicacoes.txt' and add to the ArrayList 'publicacao'
      */
-    public void lerTxt3(String fileName) {
+    public void lerTxt3() {
         String line3;
         int numLine = 0;
 
-        //File fich3 = new File("publicacoes.txt");
-        File fich3 = new File(fileName);
+        File fich3 = new File("publicacoes.txt");
 
         if (fich3.exists() && fich3.isFile()) {
             try {
                 FileReader fr3 = new FileReader(fich3);
                 BufferedReader br3 = new BufferedReader(fr3);
-
-                //TESTE COMEÇA AQUI
 
                 while ((line3 = br3.readLine()) != null) {
                     numLine += 1;
@@ -278,8 +324,6 @@ public class CISUC {
                             }
                         }
                     }
-
-                    //TESTE PARA AQUI
 
                     if (aux == 0) {
                         System.err.println("Erro na linha " + numLine + " do ficheiro 'publicacoes.txt'\nNenhum dos autores da publicacao pertence ao grupo");
@@ -330,8 +374,6 @@ public class CISUC {
                         Publicacoes v4 = new LivroConferencia(autores, cortado3[2], cortado3[3], cortado3[4], ano, audiencia, cortado3[7], cortado3[8], isbn3, cortado3[10], artigos);
                         publicacao.add(v4);
                     }
-
-                    //TESTE VOLTA A COMEÇAR AQUI
                 }
             } catch (FileNotFoundException ex) {
                 System.err.println("Erro ao abrir o ficheiro de texto.");
