@@ -25,7 +25,12 @@ public class CISUC {
         publicacao = new ArrayList<>();
         grupo = new ArrayList<>();
 
-        blackBoxTest(1);
+        /*
+        for(int i=0; i<100000; i++){
+            System.out.print(",Maria" + i);
+        }*/
+
+        blackBoxTest(0);
 
         /*
         if (lerObj() == 0) {
@@ -77,14 +82,13 @@ public class CISUC {
     public void blackBoxTest(int i){
 
         File folder;
-        File[] listOfFiles;
         String fileName;
 
         lerTxt1();
         lerTxt2();
 
-        //Complexity 7
-        if(i == 0){
+
+        if(i == 0){ //Complexity 7
 
             folder = new File("input_data/blackBox0/");
 
@@ -95,13 +99,12 @@ public class CISUC {
 
                         System.out.println(fileName);
 
-                        if(fileName.equals("testl.txt")){
+                        /*if(!fileName.equals("testGV.txt")){
                             continue;
-                        }
+                        }*/
 
-
-                        //PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
-                        //System.setOut(fileOut);
+                        PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
+                        System.setOut(fileOut);
 
                         try {
 
@@ -118,7 +121,7 @@ public class CISUC {
                             System.err.println(e);
                         }
 
-                        //fileOut.close();
+                        fileOut.close();
                     }
                 }
             }
@@ -127,7 +130,7 @@ public class CISUC {
             }
 
         }
-        else if(i == 1) {
+        else if(i == 1) { //Complexity 6
 
             folder = new File("input_data/blackBox1/");
 
