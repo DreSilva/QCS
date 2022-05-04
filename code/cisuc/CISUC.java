@@ -24,7 +24,11 @@ public class CISUC {
         publicacao = new ArrayList<>();
         grupo = new ArrayList<>();
 
-        blackBoxTest(1);
+        //blackBoxTest(0);
+        //blackBoxTest(1);
+        //varia os ficheiros de grupos
+        //blackBoxTest(2);
+        blackBoxTest(3);
 
         /*
         if (lerObj() == 0) {
@@ -78,13 +82,9 @@ public class CISUC {
         File folder;
         String fileName;
 
-        //lerTxt1("grupos.txt");
-        lerTxt1("grupos/gruposMm.txt");
-        lerTxt2();
-
-
         if(i == 0){ //Complexity 7
 
+            lerTxt1("grupos.txt");
             folder = new File("input_data/blackBox0/");
 
             try{
@@ -92,14 +92,14 @@ public class CISUC {
                     if (fileEntry.isFile()){
                         fileName =  fileEntry.getName();
 
-                        System.out.println(fileName);
+                        //System.out.println(fileName);
 
-                        if(!fileName.equals("publicacoes.txt")){
+                        /*if(!fileName.equals("testL.txt")){
                             continue;
-                        }
+                        }*/
 
-                        //PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
-                        //System.setOut(fileOut);
+                        PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
+                        System.setOut(fileOut);
 
                         try {
 
@@ -111,15 +111,11 @@ public class CISUC {
                             br3.close();
                             fr3.close();
 
-                        } catch (FileNotFoundException ex) {
-                            System.err.println("Erro ao abrir o ficheiro de texto.");
-                        } catch (IOException ex) {
-                            System.err.println("Erro a ler o ficheiro de texto.");
-                        } catch (Exception e) {
+                        }  catch (Exception e) {
                             System.err.println(e);
                         }
 
-                        //fileOut.close();
+                        fileOut.close();
                     }
                 }
             }
@@ -130,21 +126,118 @@ public class CISUC {
         }
         else if(i == 1) { //Complexity 6
 
+            lerTxt1("grupos.txt");
             folder = new File("input_data/blackBox1/");
 
             try{
                 for (final File fileEntry: folder.listFiles()){
                     if (fileEntry.isFile()){
-                        fileName =  fileEntry.getName();
+                        fileName = fileEntry.getName();
 
-                        System.out.println(fileName);
+                        //System.out.println(fileName);
 
-                        //PrintStream fileOut = new PrintStream("output_data/blackBox1/" + fileName);
-                        //System.setOut(fileOut);
+                        if(!investigador.isEmpty()){
+                            investigador = new ArrayList<>();
+                        }
+
+                        lerTxt2("input_data/blackBox1/" +fileName);
+
+                        PrintStream fileOut = new PrintStream("output_data/blackBox1/" + fileName);
+                        System.setOut(fileOut);
 
                         test1();
 
-                        //fileOut.close();
+                        fileOut.close();
+
+                    }
+                }
+            }
+            catch (Exception e){
+                System.out.println(e);
+            }
+        }
+        else if(i == 2){ //Complexity 7 - grupos
+
+            folder = new File("grupos/");
+
+            try{
+                for (final File fileEntry: folder.listFiles()){
+                    if (fileEntry.isFile()){
+
+                        fileName = fileEntry.getName();
+
+                        //System.out.println(fileName);
+
+                        if(fileName.equals("grupos3.txt") || fileName.equals("grupos4.txt")){
+                            continue;
+                        }
+
+                        if(!grupo.isEmpty()){
+                            grupo = new ArrayList<>();
+                        }
+
+                        lerTxt1("grupos/" + fileName);
+
+                        PrintStream fileOut = new PrintStream("output_data/grupos0/" + fileName);
+                        System.setOut(fileOut);
+
+                        try {
+
+                            File fich3 = new File("publicacoes.txt");
+                            FileReader fr3 = new FileReader(fich3);
+                            BufferedReader br3 = new BufferedReader(fr3);
+
+                            test0(br3);
+
+                            br3.close();
+                            fr3.close();
+
+                        }  catch (Exception e) {
+                            System.err.println(e);
+                        }
+
+                        fileOut.close();
+                    }
+                }
+            }
+            catch (Exception e){
+                System.out.println(e);
+            }
+        }
+        else if(i == 3) { //Complexity 6 - grupos
+
+            folder = new File("grupos/");
+
+            try{
+                for (final File fileEntry: folder.listFiles()){
+                    if (fileEntry.isFile()){
+
+                        fileName = fileEntry.getName();
+
+                        //System.out.println(fileName);
+
+                        if(fileName.equals("grupos3.txt") || fileName.equals("grupos4.txt")){
+                            continue;
+                        }
+
+                        if(!grupo.isEmpty()){
+                            grupo = new ArrayList<>();
+                        }
+
+                        lerTxt1("grupos/" + fileName);
+
+                        if(!investigador.isEmpty()){
+                            investigador = new ArrayList<>();
+                        }
+                        lerTxt2("investigadores.txt");
+
+
+                        PrintStream fileOut = new PrintStream("output_data/grupos1/" + fileName);
+                        System.setOut(fileOut);
+
+                        test1();
+
+                        fileOut.close();
 
                     }
                 }
@@ -244,10 +337,11 @@ public class CISUC {
     /**
      * Read the text file 'investigadores.txt' and add to the ArrayList 'investigador'
      */
-    public void lerTxt2() {
+    public void lerTxt2(String nameFile) {
         String line2;
 
-        File fich2 = new File("investigadores.txt");
+        //File fich2 = new File("investigadores.txt");
+        File fich2 = new File(nameFile);
         if (fich2.exists() && fich2.isFile()) {
             try {
                 FileReader fr2 = new FileReader(fich2);

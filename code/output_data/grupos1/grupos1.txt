@@ -1,0 +1,14 @@
+	AC - 	Membros efetivos: 5
+		Estudantes: 3
+	CMS - 	Membros efetivos: 5
+		Estudantes: 3
+	ECOS - 	Membros efetivos: 5
+		Estudantes: 3
+	IS - 	Membros efetivos: 5
+		Estudantes: 3
+	LCT - 	Membros efetivos: 5
+		Estudantes: 3
+	SSE - 	Membros efetivos: 5
+		Estudantes: 3
+	SSE - 	Membros efetivos: 5
+		Estudantes: 3

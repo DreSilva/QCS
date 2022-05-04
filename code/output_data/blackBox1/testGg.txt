@@ -1,9 +1,9 @@
-	AC - 	Membros efetivos: 0
-		Estudantes: 19
-	CMS - 	Membros efetivos: 0
-		Estudantes: 0
+	AC - 	Membros efetivos: 3
+		Estudantes: 3
+	CMS - 	Membros efetivos: 5
+		Estudantes: 2
 	ECOS - 	Membros efetivos: 0
-		Estudantes: 0
+		Estudantes: 1
 	IS - 	Membros efetivos: 0
 		Estudantes: 0
 	LCT - 	Membros efetivos: 0
