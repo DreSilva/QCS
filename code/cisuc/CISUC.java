@@ -3,7 +3,6 @@ package cisuc;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -25,12 +24,7 @@ public class CISUC {
         publicacao = new ArrayList<>();
         grupo = new ArrayList<>();
 
-        /*
-        for(int i=0; i<100000; i++){
-            System.out.print(",Maria" + i);
-        }*/
-
-        blackBoxTest(0);
+        blackBoxTest(1);
 
         /*
         if (lerObj() == 0) {
@@ -84,7 +78,8 @@ public class CISUC {
         File folder;
         String fileName;
 
-        lerTxt1();
+        //lerTxt1("grupos.txt");
+        lerTxt1("grupos/gruposMm.txt");
         lerTxt2();
 
 
@@ -99,12 +94,12 @@ public class CISUC {
 
                         System.out.println(fileName);
 
-                        /*if(!fileName.equals("testGV.txt")){
+                        if(!fileName.equals("publicacoes.txt")){
                             continue;
-                        }*/
+                        }
 
-                        PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
-                        System.setOut(fileOut);
+                        //PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
+                        //System.setOut(fileOut);
 
                         try {
 
@@ -112,6 +107,9 @@ public class CISUC {
                             BufferedReader br3 = new BufferedReader(fr3);
 
                             test0(br3);
+
+                            br3.close();
+                            fr3.close();
 
                         } catch (FileNotFoundException ex) {
                             System.err.println("Erro ao abrir o ficheiro de texto.");
@@ -121,7 +119,7 @@ public class CISUC {
                             System.err.println(e);
                         }
 
-                        fileOut.close();
+                        //fileOut.close();
                     }
                 }
             }
@@ -139,12 +137,14 @@ public class CISUC {
                     if (fileEntry.isFile()){
                         fileName =  fileEntry.getName();
 
-                        PrintStream fileOut = new PrintStream("output_data/blackBox1/" + fileName);
-                        System.setOut(fileOut);
+                        System.out.println(fileName);
+
+                        //PrintStream fileOut = new PrintStream("output_data/blackBox1/" + fileName);
+                        //System.setOut(fileOut);
 
                         test1();
 
-                        fileOut.close();
+                        //fileOut.close();
 
                     }
                 }
@@ -218,10 +218,10 @@ public class CISUC {
     /**
      * Read the text file 'grupos.txt' and add to the ArrayList 'grupo'
      */
-    public void lerTxt1() {
+    public void lerTxt1(String nameFile) {
         String line1;
 
-        File fich1 = new File("grupos.txt");
+        File fich1 = new File(nameFile);
         if (fich1.exists() && fich1.isFile()) {
             try {
                 FileReader fr1 = new FileReader(fich1);

@@ -1,0 +1,6 @@
+Adaptive Computation,,AC,,,,Antonio Dourado;;Bernardete Ribeiro;;Joel Arrais;;Luis Paquete;;Paulo Carvalho;;Joaquim Leitao;;Mauro Pinto;;Nelson Monteiro
+Cognitive and Media Systems,,CMS,,Penousal Machado,,Ana Boavida;;Luis Macedo;;Maria Marcelino;;Pedro Abreu;;Rui Paiva;;Bruno Taborda;;Miriam Santos;;Tiago Martins
+Evolutionary and Complex Systems,,ECOS,,Nuno Lourenco,,Ernesto Costa;;Francisco Pereira;;Joao Correia;;Leonor Melo;;Tiago Baptista;;Paulo Fernandes;;Pedro Carvalho;;Victor Costa
+Information Systems,,IS,,Licinio Roque,,Joao Barata;;Jorge Cardoso;;Paula Silva;;Paulo Cunha;;Rui Craveirinha;;Luis Pereira;;Nuno Castelhano;;Stanley Lima
+Communications and Telematics,,LCT,,Paulo Simoes,,Bruno Sousa;;Edmundo Monteiro;;Joao Vilela;;Marilia Curado;;Tiago Cruz;;David Abreu;;Duarte Raposo;;Mariana Cunha
+Software and Systems Engineering,,SSE,,Henrique Madeira,,Bruno Cabral;;Fernando Barros;;Marco Vieira;;Nuno Antunes;;Raul Barbosa;;Charles Goncalves;;Jaime Correia;;Paulo Goncalves

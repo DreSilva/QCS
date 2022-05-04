@@ -1,0 +1,18 @@
+M#Jorge Henriques#jh@dei.uc.pt#aC#D2.7#110010
+M#Antonio Dourado#dourado@dei.uc.pt#Ac#D3.5#110011
+M#Bernardete Ribeiro#bribeiro@dei.uc.pt#ac#D1.18#110012
+M#Joel Arrais#joelarrais@gmail.com#AC#G5.5#110013
+E#Joaquim Leitao#jpleitao@dei.uc.pt#AC#Adaptive Supervisory Framework for Cyber-Physical Systems#30/10/2018#Bernardete Ribeiro
+E#Mauro Pinto#mauropinto@dei.uc.pt#AC#Evaluation and prediction of Multiple Sclerosis Disease Progression#13/8/2018#Luis Paquete
+E#Nelson Monteiro#nelsonnrcm@dei.uc.pt#AC#Drug-Target Interaction Prediction: End-to-End Deep Learning Approach#28/11/2019#Joel Arrais
+M#Penousal Machado#machado@dei.uc.pt#CMs#D2.21#110016
+M#Ana Boavida#aboavida@dei.uc.pt#CmS#D2.23#110017
+M#Luis Macedo#macedo@dei.uc.pt#cMS#D2.2#110018
+M#Maria Marcelino#zemar@dei.uc.pt#CMS#D2.3#110019
+M#Pedro Abreu#pha@dei.uc.pt#CMS#D2.13#110020
+M#Rui Paiva#ruipedro@dei.uc.pt#CmS#D2.11#110021
+E#Bruno Taborda#bmtt@dei.uc.pt#CMS#Wood Mass-Customized Housing: A dual computer implementation design strategy#2/3/2016#Luis Macedo
+E#Miriam Santos#miriams@dei.uc.pt#CMS#Influence of Data Distribution in Missing Data Imputation, in Artificial Intelligence in Medicine in Europe#25/9/2017#Pedro Abreu
+E#Tiago Martins#tiagofm@dei.uc.pt#CMs#Abordagens Algoritmicas e Computacionais na Arte e no Design#18/6/2013#Ana Boavida
+M#Nuno Lourenco#naml@dei.uc.pt#ECOS#D1.13#110022
+E#Victor Costa#vfc@dei.uc.pt#ECOS#Coevolution of Generative Adversarial Networks#6/12/2019#Nuno Lourenco
