@@ -1,0 +1,44 @@
+Caminhos fluxo 0:
+
+P1: S-1-E -> pub0.txt e grupos0.txt (ou qualquer)
+
+P2: S-1-2-1-E -> pub1.txt (ou qualquer) e grupos0.txt
+
+P3: S-1-2-3-2-1-E -> pub1.txt e grupos.txt
+-> pessoas e grupo não existe
+
+P4: S-1-2-3-4-5-6-7-2-1-E  -> pub3.txt e grupos3.txt (vai dar erro)
+-> investigador responsavel existe e pertence ao grupo, mas lista de membros está vazia
+
+P5: S-1-2-3-4-6-7-2-1-E -> pub4.txt e grupos3.txt (vai dar erro)
+-> membro existe e pertence ao grupo, mas lista de membros está vazia
+
+P6: S-1-2-3-4-6-7-8-9-10-7-2-1-E -> pub4.txt e grupos.txt
+-> membro existe e pertence ao grupo
+
+P7: S-1-2-3-4-6-7-8-10-7-2-1-E -> pub2.txt e grupos.txt
+-> grupo que existe e pessoas que não existem
+
+
+-------------------
+
+
+Caminhos fluxo 1:
+
+P1: S-1-E -> grupos0.txt e investigadores.txt (ou qualquer)
+
+P2: S-1-2-1-E -> grupos3.txt e investigadores.txt (ou qualquer)
+
+P3: S-1-2-3-2-1-E -> grupos.txt e inv0.txt
+
+P4: S-1-2-3-4-3-2-1-E -> grupos.txt e inv1.txt
+-> estudante não existente
+
+P5: S-1-2-3-4-5-6-3-2-1-E -> grupos.txt e inv4.txt
+-> membro efetivo existe = contar membro efetivo em AC
+
+(P5: S-1-2-3-4-5-6-3-2-1-E -> grupos.txt e inv4.txt
+->tendo em conta que o Jorge Henriques é investigador responsável deveria ser contado como membro efetivo, contudo, não se tem essa opção, ou então ele deveria estar incluido na lista de membros))
+
+P6: S-1-2-3-4-5-7-3-2-1-E -> grupos.txt e inv3.txt
+-> estudante existente (e orientador faz parte da lista de membros) = contar 1 estudante em AC

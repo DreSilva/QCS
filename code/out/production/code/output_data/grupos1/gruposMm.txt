@@ -1,0 +1,12 @@
+	ac - 	Membros efetivos: 5
+		Estudantes: 0
+	cMs - 	Membros efetivos: 5
+		Estudantes: 0
+	EcOs - 	Membros efetivos: 5
+		Estudantes: 0
+	IS - 	Membros efetivos: 5
+		Estudantes: 3
+	lCT - 	Membros efetivos: 5
+		Estudantes: 0
+	Sse - 	Membros efetivos: 5
+		Estudantes: 0

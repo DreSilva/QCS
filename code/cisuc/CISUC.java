@@ -26,14 +26,18 @@ public class CISUC {
 
         //blackBoxTest(0);
         //blackBoxTest(1);
-        //varia os ficheiros de grupos
         //blackBoxTest(2);
-        blackBoxTest(3);
+        //blackBoxTest(3);
+
+        whiteBoxTest(0, "P1", "pub0.txt", "grupos/grupos0.txt");
+        whiteBoxTest(0, "P2", "pub1.txt", "grupos/grupos0.txt");
+        whiteBoxTest(0, "P3", "pub1.txt", "grupos/grupos.txt");
+        //whiteBoxTest(0, "pub3.txt", "grupos/grupos3.txt");
 
         /*
         if (lerObj() == 0) {
-            lerTxt1();
-            lerTxt2();
+            lerTxt1("grupos.txt");
+            lerTxt2("investigadores.txt");
             //lerTxt3();
             escreverObj();
         }
@@ -74,7 +78,7 @@ public class CISUC {
     }
 
     /***
-     * DEGUG
+     * DEGUG BLACK BOX
      * @param i
      */
     public void blackBoxTest(int i){
@@ -285,7 +289,7 @@ public class CISUC {
 
     /**
      * DEBUG - FUNCAO TESTE 1
-     * //b) Number of members of each category (gryp)
+     * b) Number of members of each category (gryp)
      */
     public void test1(){
 
@@ -306,6 +310,104 @@ public class CISUC {
             }
             System.out.println("\t" + g2.getAcronimo() + " - \tMembros efetivos: " + numM + "\n\t\tEstudantes: " + numE);
         }
+    }
+
+    public void clean(){
+        if(!grupo.isEmpty()){
+            grupo = new ArrayList<>();
+        }
+
+        if(!publicacao.isEmpty()){
+            publicacao = new ArrayList<>();
+        }
+
+        if(!investigador.isEmpty()){
+            investigador = new ArrayList<>();
+        }
+    }
+
+    public void whiteBoxTest(int i, String path, String fileName, String fileGrupos){
+
+        try{
+            if(i == 0){ //Complexity 7
+
+                clean();
+
+                lerTxt1(fileGrupos);
+
+                PrintStream fileOut = new PrintStream("output_data/whiteBox0/" + path + ".txt");
+                System.setOut(fileOut);
+
+                try {
+
+                    File fch3 = new File("input_data/whiteBox0/" + fileName);
+                    FileReader fr3 = new FileReader(fch3);
+                    BufferedReader br3 = new BufferedReader(fr3);
+
+                    testW0(br3);
+
+                    br3.close();
+                    fr3.close();
+
+                }  catch (Exception e) {
+                    System.err.println(e);
+                }
+
+                fileOut.close();
+
+            }
+        }catch (Exception e){System.out.println(e);}
+
+    }
+
+    public void testW0(BufferedReader br3) throws Exception{
+
+        String line3;
+        int numLine = 0;
+
+        System.out.print("S-");
+        System.out.print("1-");
+
+        while ((line3 = br3.readLine()) != null ) {
+            numLine += 1;
+
+            String[] cortado3 = line3.split("&&&");
+            String[] autores = cortado3[1].split(",");
+            String nomeGrupo = cortado3[2];
+            int aux = 0;
+
+            System.out.print("2-");
+
+            for (Grupos j : grupo){
+
+                System.out.print("3-");
+
+                if (j.getAcronimo().equals(nomeGrupo)) {
+                    System.out.print("4-");
+                    if (j.getInvResp().equals(autores[0]) || j.getInvResp().equals(autores[1]) || j.getInvResp().equals(autores[2])) {
+                        System.out.print("5-");
+                        aux = 1;
+                    }
+                    String[] membros = j.getListaMembros();
+                    System.out.print("6-");
+                    for (String nome : membros) {
+                        System.out.print("7-");
+                        System.out.print("8-");
+                        if (nome.equals(autores[0]) || nome.equals(autores[1]) || nome.equals(autores[2])) {
+                            aux = 1;
+                            System.out.print("9-");
+                        }
+                        System.out.print("10-");
+                        System.out.print("7-");
+                    }
+                }
+            }
+            //System.out.println(aux);
+            System.out.print("2-"); //?
+            System.out.print("1-");
+        }
+
+        System.out.print("E");
     }
 
     /**
