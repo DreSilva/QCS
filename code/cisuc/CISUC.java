@@ -37,12 +37,12 @@ public class CISUC {
         //whiteBoxTest(0, "P6", "pub4.txt", "grupos/gruposWB.txt");
         //whiteBoxTest(0, "P7", "pub2.txt", "grupos/gruposWB.txt");
 
-        //whiteBoxTest(1, "P1", "investigadores.txt", "grupos/grupos0.txt");
+        whiteBoxTest(1, "P1", "../../investigadores.txt", "grupos/grupos0.txt");
         //whiteBoxTest(1, "P2", "investigadores.txt", "grupos/grupos3.txt");
-        //whiteBoxTest(1, "P3", "inv0.txt", "grupos/gruposWB.txt");
+        whiteBoxTest(1, "P3", "inv0.txt", "grupos/gruposWB.txt");
         //whiteBoxTest(1, "P4", "inv1.txt", "grupos/grupos3.txt");
         //whiteBoxTest(1, "P5", "inv4.txt", "grupos/grupos3.txt");
-        //whiteBoxTest(1, "P6", "inv3.txt", "grupos/gruposWB.txt");
+        whiteBoxTest(1, "P6", "inv3.txt", "grupos/gruposWB.txt");
 
         /*
         if (lerObj() == 0) {
@@ -380,10 +380,10 @@ public class CISUC {
                 lerTxt1(fileGrupos);
                 lerTxt2("input_data/whiteBox1/" + fileName);
 
-                PrintStream fileOut = new PrintStream("output_data/blackBox1/" + path);
+                PrintStream fileOut = new PrintStream("output_data/whiteBox1/" + path + ".txt");
                 System.setOut(fileOut);
 
-                test1();
+                testW1();
 
                 fileOut.close();
 
