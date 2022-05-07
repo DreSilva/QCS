@@ -29,10 +29,20 @@ public class CISUC {
         //blackBoxTest(2);
         //blackBoxTest(3);
 
-        whiteBoxTest(0, "P1", "pub0.txt", "grupos/grupos0.txt");
-        whiteBoxTest(0, "P2", "pub1.txt", "grupos/grupos0.txt");
-        whiteBoxTest(0, "P3", "pub1.txt", "grupos/grupos.txt");
-        //whiteBoxTest(0, "pub3.txt", "grupos/grupos3.txt");
+        //whiteBoxTest(0, "P1", "pub0.txt", "grupos/grupos0.txt");
+        //whiteBoxTest(0, "P2", "pub1.txt", "grupos/grupos0.txt");
+        //whiteBoxTest(0, "P3", "pub1.txt", "grupos/gruposWB.txt");
+        //whiteBoxTest(0, "P4", "pub3.txt", "grupos/grupos3.txt");
+        //whiteBoxTest(0, "P5", "pub2.txt", "grupos/grupos3.txt");
+        //whiteBoxTest(0, "P6", "pub4.txt", "grupos/gruposWB.txt");
+        //whiteBoxTest(0, "P7", "pub2.txt", "grupos/gruposWB.txt");
+
+        //whiteBoxTest(1, "P1", "investigadores.txt", "grupos/grupos0.txt");
+        //whiteBoxTest(1, "P2", "investigadores.txt", "grupos/grupos3.txt");
+        //whiteBoxTest(1, "P3", "inv0.txt", "grupos/gruposWB.txt");
+        //whiteBoxTest(1, "P4", "inv1.txt", "grupos/grupos3.txt");
+        //whiteBoxTest(1, "P5", "inv4.txt", "grupos/grupos3.txt");
+        //whiteBoxTest(1, "P6", "inv3.txt", "grupos/gruposWB.txt");
 
         /*
         if (lerObj() == 0) {
@@ -289,7 +299,7 @@ public class CISUC {
 
     /**
      * DEBUG - FUNCAO TESTE 1
-     * b) Number of members of each category (gryp)
+     * b) Number of members of each category (group)
      */
     public void test1(){
 
@@ -326,6 +336,13 @@ public class CISUC {
         }
     }
 
+    /**
+     * DEBUG WHITE BOX
+     * @param i fluxo 0 ou 1
+     * @param path caminho e nome da pasta de output
+     * @param fileName nome do ficheiro investigadores/publicacoes consoante o fluxo escolhido
+     * @param fileGrupos caminho ficheiro dos grupos
+     */
     public void whiteBoxTest(int i, String path, String fileName, String fileGrupos){
 
         try{
@@ -356,6 +373,21 @@ public class CISUC {
                 fileOut.close();
 
             }
+            else if(i == 1){
+
+                clean();
+
+                lerTxt1(fileGrupos);
+                lerTxt2("input_data/whiteBox1/" + fileName);
+
+                PrintStream fileOut = new PrintStream("output_data/blackBox1/" + path);
+                System.setOut(fileOut);
+
+                test1();
+
+                fileOut.close();
+
+            }
         }catch (Exception e){System.out.println(e);}
 
     }
@@ -376,10 +408,9 @@ public class CISUC {
             String nomeGrupo = cortado3[2];
             int aux = 0;
 
-            System.out.print("2-");
-
             for (Grupos j : grupo){
 
+                System.out.print("2-");
                 System.out.print("3-");
 
                 if (j.getAcronimo().equals(nomeGrupo)) {
@@ -398,7 +429,7 @@ public class CISUC {
                             System.out.print("9-");
                         }
                         System.out.print("10-");
-                        System.out.print("7-");
+                        //System.out.print("7-");
                     }
                 }
             }
@@ -407,6 +438,39 @@ public class CISUC {
             System.out.print("1-");
         }
 
+        System.out.print("E");
+    }
+
+    public void testW1(){
+
+        System.out.print("S-");
+        System.out.print("1-");
+
+        for (Grupos g2 : grupo) {
+
+            System.out.print("2-");
+
+            int numM = 0, numE = 0;
+            String[] listaMembros = g2.getListaMembros();
+            for (String membro : listaMembros) {
+                System.out.print("3-");
+                for (Investigadores i : investigador) {
+                    System.out.print("4-");
+                    if (membro.equals(i.getNome())) {
+                        System.out.print("5-");
+                        if (i.isInv().equals("M")) {
+                            System.out.print("6-");
+                            numM += 1; //effective member
+                        }
+                        else {
+                            System.out.print("7-");
+                            numE += 1; //student
+                        }
+                    }
+                }
+            }
+            //System.out.println("\t" + g2.getAcronimo() + " - \tMembros efetivos: " + numM + "\n\t\tEstudantes: " + numE);
+        }
         System.out.print("E");
     }
 

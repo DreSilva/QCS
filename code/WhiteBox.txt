@@ -4,7 +4,7 @@ P1: S-1-E -> pub0.txt e grupos0.txt (ou qualquer)
 
 P2: S-1-2-1-E -> pub1.txt (ou qualquer) e grupos0.txt
 
-P3: S-1-2-3-2-1-E -> pub1.txt e grupos.txt
+P3: S-1-2-3-2-1-E -> pub1.txt e gruposWB.txt
 -> pessoas e grupo não existe
 
 P4: S-1-2-3-4-5-6-7-2-1-E  -> pub3.txt e grupos3.txt (vai dar erro)
@@ -13,10 +13,10 @@ P4: S-1-2-3-4-5-6-7-2-1-E  -> pub3.txt e grupos3.txt (vai dar erro)
 P5: S-1-2-3-4-6-7-2-1-E -> pub4.txt e grupos3.txt (vai dar erro)
 -> membro existe e pertence ao grupo, mas lista de membros está vazia
 
-P6: S-1-2-3-4-6-7-8-9-10-7-2-1-E -> pub4.txt e grupos.txt
+P6: S-1-2-3-4-6-7-8-9-10-7-2-1-E -> pub4.txt e gruposWB.txt
 -> membro existe e pertence ao grupo
 
-P7: S-1-2-3-4-6-7-8-10-7-2-1-E -> pub2.txt e grupos.txt
+P7: S-1-2-3-4-6-7-8-10-7-2-1-E -> pub2.txt e gruposWB.txt
 -> grupo que existe e pessoas que não existem
 
 
@@ -27,7 +27,7 @@ Caminhos fluxo 1:
 
 P1: S-1-E -> grupos0.txt e investigadores.txt (ou qualquer)
 
-P2: S-1-2-1-E -> grupos3.txt e investigadores.txt (ou qualquer)
+P2: S-1-2-1-E -> grupos3.txt e investigadores.txt (ou qualquer) -> erro
 
 P3: S-1-2-3-2-1-E -> grupos.txt e inv0.txt
 
