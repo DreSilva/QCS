@@ -1,0 +1,16 @@
+Erros encontrados:
+- lertxt1() -> 1. Na leitura dos ficheiros grupos3.txt e grupos4.txt temos uma java.lang.ArrayIndexOutOfBoundsException.
+            -> Isto deve-se pois não existe verificação do número de parcelas após o split.
+            -> No caso destes ficheiros, foi retirada a última e penúltima parcelas.
+            -> Além disso, não identificada a exceção, pelo que a aplicação termina a sua execução.
+            -> 2. É case sensitive, contudo, o enunciado não faz referencia nenhuma se deve ou não ser.
+            -> 3. Não verifica por valores repetidos, permite a inserção de grupo com o mesmo acrónimo.
+
+- listarTGrupos() - alinea b) -> verificar no enunciado de POO
+            -> 1. Na contagem dos membros de cada grupo, não é contado o investigador responsável como membro efetivo
+
+- lertxt3() -> 1. mais uma vez não existe contagem de parcelas após o slipt. Para a parte do código que estamos a analisar não tem impacto, mas pode causar erros.
+            -> 2. Caso, existam menos de 3 autores no ficheiro de publicações, podemos ter java.lang.ArrayIndexOutOfBoundsException.
+            -> Caso, tenhamos mais de 3 autores, nenhum a partir dos 3 é verificado.
+            -> Caso,
+
