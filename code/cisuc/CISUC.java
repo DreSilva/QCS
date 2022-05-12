@@ -28,6 +28,7 @@ public class CISUC {
         //blackBoxTest(1);
         //blackBoxTest(2);
         //blackBoxTest(3);
+        blackBoxTest(1);
 
         //whiteBoxTest(0, "P1", "pub0.txt", "grupos/grupos0.txt");
         //whiteBoxTest(0, "P2", "pub1.txt", "grupos/grupos0.txt");
@@ -377,7 +378,16 @@ public class CISUC {
 
                 clean();
 
-                lerTxt1(fileGrupos);
+                if(fileGrupos.equals("grupos/grupos3.txt")){
+                    grupos_3_4(0);
+                }
+                else if(fileGrupos.equals("grupos/grupos3.txt")){
+                    grupos_3_4(1);
+                }
+                else{
+                    lerTxt1(fileGrupos);
+                }
+
                 lerTxt2("input_data/whiteBox1/" + fileName);
 
                 PrintStream fileOut = new PrintStream("output_data/whiteBox1/" + path + ".txt");
@@ -439,6 +449,17 @@ public class CISUC {
         }
 
         System.out.print("E");
+    }
+
+    public void grupos_3_4(int i){
+        if(i == 0){ //grupos3
+            Grupos g3 = new Grupos("Adaptive Computation", "AC", "Jorge Henriques", null);
+            grupo.add(g3);
+        }
+        else{ //grupos4
+            Grupos g4 = new Grupos("Adaptive Computation", "AC", null, null);
+            grupo.add(g4);
+        }
     }
 
     public void testW1(){

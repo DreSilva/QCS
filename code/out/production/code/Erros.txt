@@ -4,7 +4,10 @@ Erros encontrados:
             -> No caso destes ficheiros, foi retirada a última e penúltima parcelas.
             -> Além disso, não identificada a exceção, pelo que a aplicação termina a sua execução.
             -> 2. É case sensitive, contudo, o enunciado não faz referencia nenhuma se deve ou não ser.
-            -> 3. Não verifica por valores repetidos, permite a inserção de grupo com o mesmo acrónimo.
+            -> 3. Não verifica por valores repetidos, permite a inserção de grupo com o mesmo acrónimo. (visivel em listarTGrupos)
+
+- lertxt2() -> 1. Não filtra investigadores repetidos (visivel em listarTGrupos)
+            -> 2. (Não sei se é erro, mas podemos consideBD redundante, no sentido em que posso adicionar um estudantes sem que o seu membro efetivo esteja no ficheiro investigadores.txt - ele está enumerado no grupos.txt tho)
 
 - listarTGrupos() - alinea b) -> verificar no enunciado de POO
             -> 1. Na contagem dos membros de cada grupo, não é contado o investigador responsável como membro efetivo
@@ -13,4 +16,5 @@ Erros encontrados:
             -> 2. Caso, existam menos de 3 autores no ficheiro de publicações, podemos ter java.lang.ArrayIndexOutOfBoundsException.
             -> Caso, tenhamos mais de 3 autores, nenhum a partir dos 3 é verificado.
             -> Caso,
+            ->
 
