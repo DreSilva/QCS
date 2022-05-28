@@ -1,5 +1,5 @@
-	AC - 	Membros efetivos: 11
-		Estudantes: 19
+	AC - 	Membros efetivos: 0
+		Estudantes: 0
 	CMS - 	Membros efetivos: 0
 		Estudantes: 0
 	ECOS - 	Membros efetivos: 0

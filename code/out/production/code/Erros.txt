@@ -3,14 +3,16 @@ Erros encontrados:
             -> Isto deve-se pois não existe verificação do número de parcelas após o split.
             -> No caso destes ficheiros, foi retirada a última e penúltima parcelas.
             -> Além disso, não identificada a exceção, pelo que a aplicação termina a sua execução.
-            -> 2. É case sensitive, contudo, o enunciado não faz referencia nenhuma se deve ou não ser.
+            -> 2. É case sensitive, contudo, o enunciado não faz referencia nenhuma se deve ou não ser. (Contudo, em lertxt2 alguns aceita)
             -> 3. Não verifica por valores repetidos, permite a inserção de grupo com o mesmo acrónimo. (visivel em listarTGrupos)
 
 - lertxt2() -> 1. Não filtra investigadores repetidos (visivel em listarTGrupos)
-            -> 2. (Não sei se é erro, mas podemos consideBD redundante, no sentido em que posso adicionar um estudantes sem que o seu membro efetivo esteja no ficheiro investigadores.txt - ele está enumerado no grupos.txt tho)
+            -> 2. (Não sei se é erro, mas podemos considerar a BD redundante, no sentido em que posso adicionar um estudantes sem que o seu membro efetivo esteja no ficheiro investigadores.txt - ele está enumerado no grupos.txt tho)
+            -> 3. Incongruencia!! Para o investigadores aceita grupos com minusculas, para os estudantes não. É case sensitive?
 
 - listarTGrupos() - alinea b) -> verificar no enunciado de POO
-            -> 1. Na contagem dos membros de cada grupo, não é contado o investigador responsável como membro efetivo
+            -> 1. Na contagem dos membros de cada grupo, não é contado o investigador responsável como membro efetivo (não é claro pelo enunciado se deveria ser, não vou considerar erro mas vou deixar uma nota)
+            -> 2. Caso a lista de membros esteja vazia temos NullPointerException em for (String nome : membros)
 
 - lertxt3() -> 1. mais uma vez não existe contagem de parcelas após o slipt. Para a parte do código que estamos a analisar não tem impacto, mas pode causar erros.
             -> 2. Caso, existam menos de 3 autores no ficheiro de publicações, podemos ter java.lang.ArrayIndexOutOfBoundsException.

@@ -1,0 +1,6 @@
+M##jh@dei.uc.pt#AC#D2.7#110010
+M#Antonio Dourado#dourado@dei.uc.pt##D3.5#110011
+M#Bernardete Ribeiro#bribeiro@dei.uc.pt#AC#D1.18#110012
+E##jpleitao@dei.uc.pt#AC#Nome Tese#30/10/2018#Bernardete Ribeiro
+E#Mauro Pinto#mauropinto@dei.uc.pt##Nome Tese#13/8/2018#Luis Paquete
+E#Nelson Monteiro#nelsonnrcm@dei.uc.pt#AC#Nome Tese#28/11/2019#Joel Arrais

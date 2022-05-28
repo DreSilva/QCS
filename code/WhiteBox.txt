@@ -1,14 +1,16 @@
 Caminhos fluxo 0:
 
 P1: S-1-E -> pub0.txt e grupos0.txt (ou qualquer)
+-> ficheiro de publicações e grupos vazios: line3 == null
 
-P2: S-1-2-1-E -> pub1.txt (ou qualquer) e grupos0.txt
+P2: S-1-2-1-E -> pub1.txt (ou qualquer não vazio) e grupos0.txt
+-> ficheiro de grupos vazio: grupo = {}
 
 P3: S-1-2-3-2-1-E -> pub1.txt e gruposWB.txt
--> pessoas e grupo não existe
+-> grupo no ficheiro de publicações não existe (no ficheiro de grupos)
 
 P4: S-1-2-3-4-5-6-7-2-1-E  -> pub3.txt e grupos3.txt (vai dar erro)
--> investigador responsavel existe e pertence ao grupo, mas lista de membros está vazia
+-> investigador responsável (Jorge Henriques) existe e pertence ao grupo, mas lista de membros está vazia
 
 P5: S-1-2-3-4-6-7-2-1-E -> pub4.txt e grupos3.txt (vai dar erro)
 -> membro existe e pertence ao grupo, mas lista de membros está vazia
@@ -19,26 +21,41 @@ P6: S-1-2-3-4-6-7-8-9-10-7-2-1-E -> pub4.txt e gruposWB.txt
 P7: S-1-2-3-4-6-7-8-10-7-2-1-E -> pub2.txt e gruposWB.txt
 -> grupo que existe e pessoas que não existem
 
+N: S-1-2-3-4-5-6-7-8-9-10-E -> 12
+E: (S-1),(1,E),(1,2),(2,1),(2,3),(3,2),(3,4),(4,5),(4,6),(5,6),(6,7),(7,8),(7,2),(8,9),(8,10),(9,10),(10,7)->17
+V(G) = E - N + 2 = 17 - 12 + 2 = 7
 
+P:  1-2-3-4-7-8 -> 6
+V(G) = P + 1 = 6 + 1
 -------------------
 
 
 Caminhos fluxo 1:
 
 P1: S-1-E -> grupos0.txt e investigadores.txt (ou qualquer)
+-> ficheiro de grupos vazio: grupo = {}
 
 P2: S-1-2-1-E -> grupos3.txt e investigadores.txt (ou qualquer) -> erro
+-> lista de membros vazia
 
 P3: S-1-2-3-2-1-E -> grupos.txt e inv0.txt
+-> ficheiro de investigadores vazio
 
 P4: S-1-2-3-4-3-2-1-E -> grupos.txt e inv1.txt
--> estudante não existente
+-> investigador não existe
 
 P5: S-1-2-3-4-5-6-3-2-1-E -> grupos.txt e inv4.txt
--> membro efetivo existe = contar membro efetivo em AC
+-> membro efetivo existe e pertence ao grupo AC = contar membro efetivo em AC
 
 (P5: S-1-2-3-4-5-6-3-2-1-E -> grupos.txt e inv4.txt
 ->tendo em conta que o Jorge Henriques é investigador responsável deveria ser contado como membro efetivo, contudo, não se tem essa opção, ou então ele deveria estar incluido na lista de membros))
 
 P6: S-1-2-3-4-5-7-3-2-1-E -> grupos.txt e inv3.txt
 -> estudante existente (e orientador faz parte da lista de membros) = contar 1 estudante em AC
+
+
+BLACKBOX
+1.5 & publicação com dois autores em que nenhum pertence ao grupo & 0\\ \hline
+1.6 & publicação com dois autores em que pelo menos um pertence ao grupo & 1\\ \hline
+1.7 & publicação com três ou mais autores em que nenhum pertence ao grupo & 0\\ \hline
+1.8 & publicação com três ou mais autores em que pelo menos um pertence ao grupo & 1\\

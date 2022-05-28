@@ -2,8 +2,8 @@ M#Jorge Henriques#jh@dei.uc.pt#aC#D2.7#110010
 M#Antonio Dourado#dourado@dei.uc.pt#Ac#D3.5#110011
 M#Bernardete Ribeiro#bribeiro@dei.uc.pt#ac#D1.18#110012
 M#Joel Arrais#joelarrais@gmail.com#AC#G5.5#110013
-E#Joaquim Leitao#jpleitao@dei.uc.pt#AC#Adaptive Supervisory Framework for Cyber-Physical Systems#30/10/2018#Bernardete Ribeiro
-E#Mauro Pinto#mauropinto@dei.uc.pt#AC#Evaluation and prediction of Multiple Sclerosis Disease Progression#13/8/2018#Luis Paquete
+E#Joaquim Leitao#jpleitao@dei.uc.pt#Ac#Adaptive Supervisory Framework for Cyber-Physical Systems#30/10/2018#Bernardete Ribeiro
+E#Mauro Pinto#mauropinto@dei.uc.pt#aC#Evaluation and prediction of Multiple Sclerosis Disease Progression#13/8/2018#Luis Paquete
 E#Nelson Monteiro#nelsonnrcm@dei.uc.pt#AC#Drug-Target Interaction Prediction: End-to-End Deep Learning Approach#28/11/2019#Joel Arrais
 M#Penousal Machado#machado@dei.uc.pt#CMs#D2.21#110016
 M#Ana Boavida#aboavida@dei.uc.pt#CmS#D2.23#110017

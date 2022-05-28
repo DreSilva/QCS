@@ -24,11 +24,12 @@ public class CISUC {
         publicacao = new ArrayList<>();
         grupo = new ArrayList<>();
 
+        //lerTxt2("input_data/blackBox1/testGg.txt");
+
         //blackBoxTest(0);
-        //blackBoxTest(1);
+        blackBoxTest(1);
         //blackBoxTest(2);
         //blackBoxTest(3);
-        blackBoxTest(1);
 
         //whiteBoxTest(0, "P1", "pub0.txt", "grupos/grupos0.txt");
         //whiteBoxTest(0, "P2", "pub1.txt", "grupos/grupos0.txt");
@@ -90,7 +91,10 @@ public class CISUC {
 
     /***
      * DEGUG BLACK BOX
-     * @param i
+     * @param i opcao 0, testa fluxo 0 com ficheiro de grupos normal
+     *          opcao 1, testa fluxo 1 com ficheiro de grupos normal
+     *          opcao 2, testa fluxo 0 com ficheiro de grupos variavel e ficheiro de publicacoes original
+     *          opcao 3, testa fluxo 1 com ficheiro de grupos variavel e ficheiro de publicacoes original
      */
     public void blackBoxTest(int i){
 
@@ -109,9 +113,9 @@ public class CISUC {
 
                         //System.out.println(fileName);
 
-                        /*if(!fileName.equals("testL.txt")){
+                        if(!fileName.equals("testRep.txt")){
                             continue;
-                        }*/
+                        }
 
                         PrintStream fileOut = new PrintStream("output_data/blackBox0/" + fileName);
                         System.setOut(fileOut);
@@ -151,11 +155,16 @@ public class CISUC {
 
                         //System.out.println(fileName);
 
+                        if(!fileName.equals("testRep.txt")){
+                            continue;
+                        }
+
+
                         if(!investigador.isEmpty()){
                             investigador = new ArrayList<>();
                         }
 
-                        lerTxt2("input_data/blackBox1/" +fileName);
+                        lerTxt2("input_data/blackBox1/" + fileName);
 
                         PrintStream fileOut = new PrintStream("output_data/blackBox1/" + fileName);
                         System.setOut(fileOut);
@@ -351,7 +360,12 @@ public class CISUC {
 
                 clean();
 
-                lerTxt1(fileGrupos);
+                if(fileGrupos.equals("grupos/grupos3.txt")){
+                    grupos_3_4(0);
+                }
+                else{
+                    lerTxt1(fileGrupos);
+                }
 
                 PrintStream fileOut = new PrintStream("output_data/whiteBox0/" + path + ".txt");
                 System.setOut(fileOut);
