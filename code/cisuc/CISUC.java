@@ -27,7 +27,7 @@ public class CISUC {
         //lerTxt2("input_data/blackBox1/testGg.txt");
 
         //blackBoxTest(0);
-        blackBoxTest(1);
+        //blackBoxTest(1);
         //blackBoxTest(2);
         //blackBoxTest(3);
 
@@ -41,10 +41,10 @@ public class CISUC {
 
         //whiteBoxTest(1, "P1", "../../investigadores.txt", "grupos/grupos0.txt");
         //whiteBoxTest(1, "P2", "../../investigadores.txt", "grupos/grupos3.txt");
-        //whiteBoxTest(1, "P3", "inv0.txt", "grupos/gruposWB.txt");
-        //whiteBoxTest(1, "P4", "inv1.txt", "grupos/grupos3.txt");
-        //whiteBoxTest(1, "P5", "inv4.txt", "grupos/grupos3.txt");
-        //whiteBoxTest(1, "P6", "inv3.txt", "grupos/gruposWB.txt");
+        whiteBoxTest(1, "P3", "inv0.txt", "grupos/gruposWB.txt");
+        whiteBoxTest(1, "P4", "inv1.txt", "grupos/gruposWB.txt");
+        whiteBoxTest(1, "P5", "inv4.txt", "grupos/gruposWB.txt");
+        whiteBoxTest(1, "P6", "inv3.txt", "grupos/gruposWB.txt");
 
         /*
         if (lerObj() == 0) {
@@ -395,7 +395,7 @@ public class CISUC {
                 if(fileGrupos.equals("grupos/grupos3.txt")){
                     grupos_3_4(0);
                 }
-                else if(fileGrupos.equals("grupos/grupos3.txt")){
+                else if(fileGrupos.equals("grupos/grupos4.txt")){
                     grupos_3_4(1);
                 }
                 else{
@@ -445,15 +445,15 @@ public class CISUC {
                     }
                     String[] membros = j.getListaMembros();
                     System.out.print("6-");
+                    System.out.print("7-");
                     for (String nome : membros) {
-                        System.out.print("7-");
                         System.out.print("8-");
                         if (nome.equals(autores[0]) || nome.equals(autores[1]) || nome.equals(autores[2])) {
                             aux = 1;
                             System.out.print("9-");
                         }
                         System.out.print("10-");
-                        //System.out.print("7-");
+                        System.out.print("7-");
                     }
                 }
             }
@@ -482,11 +482,10 @@ public class CISUC {
         System.out.print("1-");
 
         for (Grupos g2 : grupo) {
-
             System.out.print("2-");
-
             int numM = 0, numE = 0;
             String[] listaMembros = g2.getListaMembros();
+
             for (String membro : listaMembros) {
                 System.out.print("3-");
                 for (Investigadores i : investigador) {
@@ -502,9 +501,12 @@ public class CISUC {
                             numE += 1; //student
                         }
                     }
+                    System.out.print("3-");
                 }
+                System.out.print("2-");
             }
             //System.out.println("\t" + g2.getAcronimo() + " - \tMembros efetivos: " + numM + "\n\t\tEstudantes: " + numE);
+            System.out.print("1-");
         }
         System.out.print("E");
     }

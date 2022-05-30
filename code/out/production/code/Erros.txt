@@ -9,6 +9,7 @@ Erros encontrados:
 - lertxt2() -> 1. Não filtra investigadores repetidos (visivel em listarTGrupos)
             -> 2. (Não sei se é erro, mas podemos considerar a BD redundante, no sentido em que posso adicionar um estudantes sem que o seu membro efetivo esteja no ficheiro investigadores.txt - ele está enumerado no grupos.txt tho)
             -> 3. Incongruencia!! Para o investigadores aceita grupos com minusculas, para os estudantes não. É case sensitive?
+            -> 4. Qd a lista de membros está vazia temos um NullPointerException
 
 - listarTGrupos() - alinea b) -> verificar no enunciado de POO
             -> 1. Na contagem dos membros de cada grupo, não é contado o investigador responsável como membro efetivo (não é claro pelo enunciado se deveria ser, não vou considerar erro mas vou deixar uma nota)
